@@ -1,0 +1,168 @@
+.hide-desktop {
+    display: none;
+}
+#menu-check:checked ~ .aside-menu {
+    display: block !important;
+}
+.aside-menu {
+    width: 40%;
+}
+.aside-menu .menu {
+    padding: 1rem;
+}
+.aside-menu .menu .search {
+    width: 100%;
+}
+.aside-menu .menu-item {
+    margin: 0.65rem 0;
+}
+.user-section {
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 100%;
+    }
+    .right-side-bar {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .all-latest {
+        justify-content: left;
+    }
+    .single-artist {
+        width: 23%;
+        margin: 1%;
+    }
+    .single-latest {
+        width: 48%;
+        margin: 1%;
+    }
+    .hide-tablet {
+        display: none;
+    }
+    .hide-desktop {
+        display: block;
+    }
+}
+@media screen and (max-width: 634px) {
+    .song-title {
+        font-size: 1rem;
+    }
+    .song-artist {
+        font-size: 0.875rem;
+    }
+    .song-time {
+        font-size: 0.75rem;
+    }
+    .aside-menu {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .single-latest {
+        padding: 0.5rem;
+    }
+    .song-title {
+        font-size: 0.9rem;
+    }
+    .song-artist {
+        font-size: 0.775rem;
+    }
+    .song-time {
+        font-size: 0.65rem;
+    }
+    .queue-content {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 528px) {
+    .single-latest {
+        width: 98%;
+        margin: 1%;
+    }
+    .song-title {
+        font-size: 1.5rem;
+    }
+    .song-artist {
+        font-size: 1rem;
+    }
+    .song-time {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .all-latest {
+        justify-content: center;
+    }
+    .single-artist {
+        width: 30%;
+        margin: 1.5%;
+    }
+    .aside-menu {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .aside-menu {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 312px) {
+    .single-latest {
+        width: 98%;
+        margin: 2% 1%;
+    }
+    .song-title {
+        font-size: 1rem;
+    }
+    .song-artist {
+        font-size: 0.875rem;
+    }
+    .song-time {
+        font-size: 0.75rem;
+    }
+    .all-latest {
+        justify-content: center;
+    }
+    .single-artist {
+        width: 46%;
+        margin: 3% 1%;
+    }
+    .latest-title {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 280px) {
+    .all-latest {
+        justify-content: center;
+    }
+    .single-artist {
+        width: 50%;
+        margin: 3% 1%;
+    }
+    .song-title {
+        font-size: 0.875rem;
+    }
+    .song-artist {
+        font-size: 0.75rem;
+    }
+    .song-time {
+        font-size: 0.75rem;
+    }
+    .footer-copyright {
+        font-size: 0.75rem;
+    }
+}
+.aside-menu {
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    background-color: #333333;
+    display: none;
+    left: 0;
+    top: 0;
+    transition-duration: 1s;
+}

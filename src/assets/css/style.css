@@ -1,0 +1,401 @@
+/* Global CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+/* Global CSS End */
+
+/* Header CSS Start */
+.logo .feather {
+    color: #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+header,
+footer {
+    background-color: #222222;
+}
+.header-main {
+    padding: 1rem;
+    display: flex;
+}
+.header-main .left-header {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    gap: 0.75rem;
+}
+.header-main .right-header {
+    display: flex;
+    width: 60%;
+    gap: 0.75rem;
+    justify-content: end;
+    align-items: center;
+}
+header .site-title {
+    font-size: 1.25rem;
+}
+.search {
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 0.5rem 2.25rem 0.5rem 2.25rem;
+    background-image: url("../images/search.svg");
+    background-position: left 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #222222;
+}
+.search:focus-visible {
+    outline: none;
+}
+.search-sec {
+    position: relative;
+}
+.search-sec .feather {
+    position: absolute;
+    top: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    right: 0.5rem;
+    stroke: #222222;
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 2.5rem;
+}
+.user-icon {
+    border-radius: 50%;
+}
+.notification .feather {
+    fill: #ffffff;
+}
+/* Header CSS End */
+
+/* Content CSS Start */
+.main {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.content {
+    width: 75%;
+    padding: 0 1rem;
+}
+.right-side-bar {
+    width: 25%;
+}
+/* Content CSS End */
+
+/* Queue CSS Start */
+.queue {
+    padding: 0 0.5rem;
+}
+.queue .title-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.queue .title-sec .left {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.queue .title-sec .right a {
+    position: relative;
+}
+.queue .title-sec .right a #button {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.queue .title-sec .right a .feather {
+    width: 2rem;
+    height: 2rem;
+}
+#button:checked ~ #queue-options {
+    display: block;
+}
+#queue-options {
+    position: absolute;
+    left: -7rem;
+    width: 9rem;
+    border-radius: 4px;
+    background-color: #222222;
+    display: none;
+}
+#queue-options ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#queue-options ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333333;
+}
+#queue-options ul li:last-child {
+    border: none;
+}
+.queue-content-sec {
+    padding-top: 1rem;
+}
+.queue-content {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 0.75rem;
+}
+
+.queue-content .content-left {
+    width: 30%;
+    text-align: left;
+}
+.queue-content .content-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+.queue-content .content-middle {
+    width: 50%;
+}
+.queue-content .content-last {
+    width: 20%;
+    text-align: right;
+}
+.queue-content .content-last .feather {
+    cursor: pointer;
+}
+.queue-content .content-last .feather:hover,
+.queue-content .content-last .feather:focus {
+    stroke: green;
+    fill: green;
+}
+.queue-content .content-left:hover {
+    opacity: 0.8;
+}
+.queue-content .content-left,
+.queue-content .content-middle .song-title,
+.queue-content .content-middle .song-artist {
+    cursor: pointer;
+}
+.song-title,
+.song-artist {
+    display: block;
+    line-height: 1.5;
+}
+.song-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Queue CSS End */
+
+/* Banner CSS Start */
+.banner-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+}
+
+.banner {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    transition-duration: 0.7s;
+}
+
+.banner:hover {
+    z-index: 7 !important;
+    height: 30vh !important;
+    width: 50% !important;
+}
+.banner-first:hover {
+    filter: drop-shadow(0 0 0.8rem rgb(200, 201, 210));
+}
+.banner-middle:hover {
+    filter: drop-shadow(0 0 0.8rem rgb(255, 157, 0));
+}
+.banner-last:hover {
+    filter: drop-shadow(0 0 0.8rem rgb(0, 38, 255));
+}
+
+.banner-first {
+    height: 20vh;
+    background-image: url("../images/first-banner.webp");
+    width: 30%;
+    left: 0%;
+    z-index: 2;
+    filter: drop-shadow(0 0 0.5rem rgb(200, 201, 210));
+}
+.banner-middle {
+    z-index: 5;
+    height: 24vh;
+    width: 40%;
+    left: 30%;
+    background-image: url("../images/middle-banner.webp");
+    filter: drop-shadow(0 0 0.5rem rgb(255, 157, 0));
+}
+.banner-last {
+    z-index: 2;
+    height: 20vh;
+    width: 30%;
+    right: 0%;
+    background-image: url("../images/last-banner.webp");
+    filter: drop-shadow(0 0 0.5rem rgb(0, 38, 255));
+}
+/* Banner CSS End */
+
+/* Latest CSS Start */
+.all-latest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.single-latest {
+    width: 49%;
+    margin: 1% 0;
+    padding: 1rem;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    background-color: #222222;
+}
+.latest-title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.song-time {
+    font-size: 0.85rem;
+}
+.latest-content {
+    padding-top: 1rem;
+}
+.latest-more-btn {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.single-latest .content-last {
+    position: relative;
+}
+.single-latest .queue-content {
+    padding-bottom: 0;
+}
+
+.latest-options {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 12rem;
+    border-radius: 4px;
+    background-color: #333333;
+    z-index: 7;
+    display: none;
+}
+.latest-options ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.latest-options ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #444444;
+}
+.latest-options ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.latest-options ul li:last-child {
+    border: none;
+}
+
+#latest-button-4:checked ~ #latest-option-4,
+#latest-button-3:checked ~ #latest-option-3,
+#latest-button-2:checked ~ #latest-option-2,
+#latest-button-1:checked ~ #latest-option-1 {
+    display: block;
+}
+/* Latest CSS End */
+
+/* Artist CSS Start */
+.single-artist {
+    width: 15%;
+    margin: 1.5% 0;
+    cursor: pointer;
+    position: relative;
+}
+.single-artist img {
+    border-radius: 50%;
+    width: 100%;
+}
+.single-artist figcaption {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.single-artist .play {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.single-artist .play:hover {
+    opacity: 1;
+}
+.single-artist .play a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.single-artist .play a .feather {
+    height: 2rem;
+    width: 2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+/* Artist CSS End */
+
+/* Footer CSS Start */
+.footer-copyright {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #ffffff;
+    padding: 0.75rem 0;
+}
+/* Footer CSS End */
