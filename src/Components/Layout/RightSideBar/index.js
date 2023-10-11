@@ -49,15 +49,15 @@ const RightSideBar = () => {
                 </div>
                 <div className="queue-content-sec">
                     {songs.map((song) => (
-                        <div class="queue-content">
-                            <div class="content-left">
+                        <div className="queue-content">
+                            <div className="content-left">
                                 <img src={song.image} />
                             </div>
-                            <div class="content-middle">
-                                <a class="song-title">{song.name}</a>
-                                <a class="song-artist">{song.artist}</a>
+                            <div className="content-middle">
+                                <a className="song-title">{song.name}</a>
+                                <a className="song-artist">{song.artist}</a>
                             </div>
-                            <div class="content-last">
+                            <div className="content-last">
                                 <Heart className="feather" />
                             </div>
                         </div>

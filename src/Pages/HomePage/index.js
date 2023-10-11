@@ -1,6 +1,6 @@
 import React from "react";
-import Content from "../../Layout/Content";
-import RightSideBar from "../../Layout/RightSideBar";
+import Content from "../../Components/Layout/Content";
+import RightSideBar from "../../Components/Layout/RightSideBar";
 
 const HomePage = () => {
     return (

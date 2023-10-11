@@ -38,7 +38,7 @@ const Header = () => {
                                     id="menu-check"
                                     className="latest-more-btn"
                                 />
-                                <AlignJustify classNameName="feather" />
+                                <AlignJustify className="feather" />
                                 <aside className="aside-menu hide-desktop">
                                     <div className="user-section">
                                         <a className="user-icon">
