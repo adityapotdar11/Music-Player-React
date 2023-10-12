@@ -372,7 +372,7 @@ header .site-title {
 .single-artist .play:hover {
     opacity: 1;
 }
-.single-artist .play a {
+.single-artist .play span {
     position: absolute;
     top: 40%;
     left: 50%;

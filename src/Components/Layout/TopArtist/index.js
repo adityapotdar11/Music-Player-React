@@ -6,6 +6,7 @@ import miley from "../../../assets/images/artists/miley-cyrus.jpeg";
 import rihanna from "../../../assets/images/artists/rihanna.jpg";
 import shakira from "../../../assets/images/artists/shakira.jpg";
 import sheeran from "../../../assets/images/artists/ed-sheeran.jpg";
+
 const TopArtist = () => {
     const artists = [
         {
@@ -33,6 +34,7 @@ const TopArtist = () => {
             name: "Ed Sheeran",
         },
     ];
+
     return (
         <>
             <div className="latest-content">
