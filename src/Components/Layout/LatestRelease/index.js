@@ -44,11 +44,15 @@ const LatestRelease = () => {
                         <div className="single-latest">
                             <div className="queue-content">
                                 <div className="content-left">
-                                    <img src={song.image} />
+                                    <img src={song.image} alt="cover" />
                                 </div>
                                 <div className="content-middle">
-                                    <a className="song-title">{song.name}</a>
-                                    <a className="song-artist">{song.date}</a>
+                                    <span className="song-title">
+                                        {song.name}
+                                    </span>
+                                    <span className="song-artist">
+                                        {song.date}
+                                    </span>
                                 </div>
                                 <div className="content-last">
                                     <input

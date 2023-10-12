@@ -40,7 +40,7 @@ footer {
     display: flex;
     width: 60%;
     gap: 0.75rem;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 header .site-title {
