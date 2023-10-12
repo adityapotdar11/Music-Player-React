@@ -40,11 +40,11 @@ const TopArtist = () => {
                 <div className="all-latest">
                     {artists.map((artist) => (
                         <figure className="single-artist">
-                            <img src={artist.image} />
+                            <img src={artist.image} alt="artist" />
                             <div className="play">
-                                <a>
+                                <span>
                                     <Play className="feather" />
-                                </a>
+                                </span>
                             </div>
                             <figcaption>{artist.name}</figcaption>
                         </figure>

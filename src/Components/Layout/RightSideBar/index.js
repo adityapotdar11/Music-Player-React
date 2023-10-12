@@ -32,10 +32,10 @@ const RightSideBar = () => {
             <div className="queue">
                 <div className="title-sec">
                     <div className="left">
-                        <a>Queue</a>
+                        <span>Queue</span>
                     </div>
                     <div className="right">
-                        <a>
+                        <div>
                             <input type="checkbox" name="" id="button" />
                             <ChevronDown className="feather" />
                             <div id="queue-options">
@@ -44,18 +44,20 @@ const RightSideBar = () => {
                                     <li>Favourite Songs</li>
                                 </ul>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div className="queue-content-sec">
                     {songs.map((song) => (
                         <div className="queue-content">
                             <div className="content-left">
-                                <img src={song.image} />
+                                <img src={song.image} alt="cover" />
                             </div>
                             <div className="content-middle">
-                                <a className="song-title">{song.name}</a>
-                                <a className="song-artist">{song.artist}</a>
+                                <span className="song-title">{song.name}</span>
+                                <span className="song-artist">
+                                    {song.artist}
+                                </span>
                             </div>
                             <div className="content-last">
                                 <Heart className="feather" />

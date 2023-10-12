@@ -11,8 +11,10 @@ const Header = () => {
                         <a href="/" className="logo">
                             <Play className="feather" />
                         </a>
-                        <a className="site-title">Music Player</a>
-                        <a className="favourites hide-tablet">Favourites</a>
+                        <span className="site-title">Music Player</span>
+                        <span className="favourites hide-tablet">
+                            Favourites
+                        </span>
                     </div>
                     <div className="right-header">
                         <div className="search-sec hide-tablet">
@@ -25,12 +27,12 @@ const Header = () => {
                             />
                             <Mic className="feather" />
                         </div>
-                        <a className="notification cursor-pointer">
+                        <span className="notification cursor-pointer">
                             <Bell className="feather" />
-                        </a>
-                        <a className="user-icon hide-tablet">
+                        </span>
+                        <div className="user-icon hide-tablet">
                             <img src={user_default} alt="profile-img" />
-                        </a>
+                        </div>
                         <div className="tablet-menu hide-desktop">
                             <div className="tablet-icon">
                                 <input
@@ -41,18 +43,18 @@ const Header = () => {
                                 <AlignJustify className="feather" />
                                 <aside className="aside-menu hide-desktop">
                                     <div className="user-section">
-                                        <a className="user-icon">
+                                        <div className="user-icon">
                                             <img
                                                 src={user_default}
                                                 alt="profile-img"
                                             />
-                                        </a>
+                                        </div>
                                     </div>
                                     <div className="menu">
                                         <div className="menu-item">
-                                            <a className="favourites">
+                                            <span className="favourites">
                                                 Favourites
-                                            </a>
+                                            </span>
                                         </div>
                                         <div className="menu-item search-sec">
                                             <input

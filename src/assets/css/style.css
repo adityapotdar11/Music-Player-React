@@ -113,17 +113,17 @@ header .site-title {
     font-size: 1.5rem;
     font-weight: 500;
 }
-.queue .title-sec .right a {
+.queue .title-sec .right div {
     position: relative;
 }
-.queue .title-sec .right a #button {
+.queue .title-sec .right div #button {
     opacity: 0;
     position: absolute;
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
 }
-.queue .title-sec .right a .feather {
+.queue .title-sec .right div .feather {
     width: 2rem;
     height: 2rem;
 }
@@ -327,7 +327,7 @@ header .site-title {
     padding: 0.5rem;
     border-bottom: 1px solid #444444;
 }
-.latest-options ul li a {
+.latest-options ul li span {
     display: flex;
     align-items: center;
     gap: 0.5rem;

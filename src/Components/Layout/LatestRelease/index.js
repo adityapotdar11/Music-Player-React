@@ -67,28 +67,28 @@ const LatestRelease = () => {
                                     >
                                         <ul>
                                             <li>
-                                                <a>
+                                                <span>
                                                     <Play className="feather" />
                                                     Play Now
-                                                </a>
+                                                </span>
                                             </li>
                                             <li>
-                                                <a>
+                                                <span>
                                                     <Plus className="feather" />
                                                     Add to Queue
-                                                </a>
+                                                </span>
                                             </li>
                                             <li>
-                                                <a>
+                                                <span>
                                                     <FolderPlus className="feather" />
                                                     Add to Favourite
-                                                </a>
+                                                </span>
                                             </li>
                                             <li>
-                                                <a>
+                                                <span>
                                                     <Info className="feather" />
                                                     Get Info
-                                                </a>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
